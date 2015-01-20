@@ -1,4 +1,5 @@
-== Schedule Parser
+Schedule Parser
+===
 
 How to use:
 
