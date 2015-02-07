@@ -13,6 +13,7 @@ with open('schedule.csv', 'rb') as csvFile:
 	for row in csvReader:
 		if len(row) == 1:
 			schedule["compCode"] = row[0]
+			schedule["compName"] = sys.argv[1]
 		else:
 			if row != []:
 				rt1r = requests.get("http://www.thebluealliance.com/api/v2/team/frc{num}".format(num=row[2]), headers={'X-TBA-App-Id': tbaAppId})
