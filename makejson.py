@@ -8,6 +8,10 @@ schedule = {"matches":[]}
 tbaAppId = 'frc1678:schedule_downloader:1'
 teams = {}
 
+if len(sys.argv) != 2:
+	print("Usage: " + sys.argv[0] + " \"Competition Name\"")
+	sys.exit(1)
+
 with open('schedule.csv', 'rb') as csvFile:
 	csvReader = csv.reader(csvFile, delimiter=',', quotechar='\"')
 	for row in csvReader:
