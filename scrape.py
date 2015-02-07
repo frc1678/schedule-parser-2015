@@ -6,7 +6,7 @@ if len(sys.argv) != 3: # Make sure there are enough arguments
 	print("Usage: {name} comp year".format(name=sys.argv[0]))
 	sys.exit(1)
 
-r = requests.get('http://www2.usfirst.org/{year}comp/Events/{code}/matchresults.html'.format(year=sys.argv[2],code=sys.argv[1])) # Download the schedule HTML
+r = requests.get('http://www2.usfirst.org/{year}comp/Events/{code}/ScheduleQual.html'.format(year=sys.argv[2],code=sys.argv[1])) # Download the schedule HTML
 
 soup = BeautifulSoup(r.text) # Parse the schedule HTML into a BeautifulSoup object
 
