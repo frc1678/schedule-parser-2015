@@ -42,7 +42,7 @@ with open('schedule.csv', 'rb') as csvFile:
 				teams[row[7]] = json.loads(bt3r.text)['nickname']
 
 
-				schedule["matches"].append({"name": row[1], "redAlliance": [{"number": row[2], "name": rt1rr}, {"number": row[3], "name": rt2rr}, {"number": row[4], "name": rt3rr}], "blueAlliance": [{"number": row[5], "name": bt1rr}, {"number": row[6], "name": bt2rr}, {"number": row[7], "name": bt3rr}]})
+				schedule["matches"].append({"name": "Q" + row[1], "redAlliance": [{"number": row[2], "name": rt1rr}, {"number": row[3], "name": rt2rr}, {"number": row[4], "name": rt3rr}], "blueAlliance": [{"number": row[5], "name": bt1rr}, {"number": row[6], "name": bt2rr}, {"number": row[7], "name": bt3rr}]})
 
 
 print(json.dumps(schedule, sort_keys=True, indent=4, separators=(',', ': ')))
