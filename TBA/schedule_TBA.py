@@ -2,6 +2,9 @@ import TBA_communicator as tba
 import json
 import re		
 
+# Created by Colin Unger 
+# Year: 2015
+
 def matchJSONToMatch(json):
 	match = ""
 	match += (re.sub('(?<=[A-Z])[A-Z]', '', str.upper((json["comp_level"]).encode('ascii','ignore'))) + str(json["match_number"]) + ",")

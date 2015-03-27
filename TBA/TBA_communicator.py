@@ -1,5 +1,8 @@
 from urllib2 import Request, urlopen
 
+# Created by Colin Unger 
+# Year: 2015
+
 basicURL = "http://www.thebluealliance.com/api/v2/"
 
 headers = {"X-TBA-App-Id" : "test:testing:0"}

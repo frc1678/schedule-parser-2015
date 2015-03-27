@@ -3,6 +3,9 @@ import json
 import os
 import shutil as sh
 
+# Created by Colin Unger 
+# Year: 2015
+
 competition = 'casa'
 year = 2015
 
