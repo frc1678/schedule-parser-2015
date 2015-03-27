@@ -79,7 +79,7 @@ if outputAsChangePackets:
 		cs.append(c)
 		j['changes'] = cs
 		print 'Opening json file for team ' + str(team['team_number'])
-		f = open('Change Packets/' + str(team['team_number']) + '.json', 'w')
+		f = open('Change Packets/' + str(team['team_number']) + '_creation.json', 'w')
 		print 'Writing to json file for team ' + str(team['team_number'])
 		f.write(json.dumps(j, sort_keys=True, indent=4, separators=(',', ': ')))
 		f.close()
