@@ -3,7 +3,7 @@ Schedule Parser
 
 How to use:
 
-Getting teams from TBA:
+*Getting teams from TBA:*
 ```
 cd TBA/
 python teams_TBA.py
@@ -12,7 +12,7 @@ This will remove everything in the directory `Change Packets` as well as the fil
 
 ---
 
-Scraping from FIRST (currently not functional):
+*~~Scraping from FIRST:~~*
 ```
 cd FIRST/
 rm schedule.csv
