@@ -9,7 +9,7 @@ cd TBA/
 python teams_TBA.py
 ```
 
-Scraping from FIRST (currenly not functional)
+Scraping from FIRST (currently not functional):
 ```
 cd FIRST/
 rm schedule.csv
