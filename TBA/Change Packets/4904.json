@@ -1,0 +1,10 @@
+{
+    "changes": [
+        {
+            "keyToChange": "name",
+            "valueToChangeTo": "Bot-Provoking"
+        }
+    ],
+    "class": "Team",
+    "uniqueValue": 4904
+}

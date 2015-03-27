@@ -1,0 +1,10 @@
+{
+    "changes": [
+        {
+            "keyToChange": "name",
+            "valueToChangeTo": "Goldstrikers"
+        }
+    ],
+    "class": "Team",
+    "uniqueValue": 2473
+}

@@ -1,0 +1,10 @@
+{
+    "changes": [
+        {
+            "keyToChange": "name",
+            "valueToChangeTo": "SOTA Cyberdragons"
+        }
+    ],
+    "class": "Team",
+    "uniqueValue": 5700
+}

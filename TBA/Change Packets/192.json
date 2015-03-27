@@ -1,0 +1,10 @@
+{
+    "changes": [
+        {
+            "keyToChange": "name",
+            "valueToChangeTo": "GRT"
+        }
+    ],
+    "class": "Team",
+    "uniqueValue": 192
+}

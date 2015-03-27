@@ -1,0 +1,10 @@
+{
+    "changes": [
+        {
+            "keyToChange": "name",
+            "valueToChangeTo": "Team Kika Mana"
+        }
+    ],
+    "class": "Team",
+    "uniqueValue": 368
+}
