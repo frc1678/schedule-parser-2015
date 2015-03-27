@@ -10,6 +10,8 @@ python teams_TBA.py
 ```
 This will remove everything in the directory `Change Packets` as well as the files `teams.csv` and `teams.json` if the respective options are chosen.
 
+---
+
 Scraping from FIRST (currently not functional):
 ```
 cd FIRST/
