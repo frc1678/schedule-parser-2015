@@ -5,7 +5,7 @@ from urllib2 import Request, urlopen
 
 basicURL = "http://www.thebluealliance.com/api/v2/"
 
-headers = {"X-TBA-App-Id" : "test:testing:0"}
+headers = {"X-TBA-App-Id" : "cdu:TBA_communicator:0"} # set to "<your initials>:TBA_communicator:0"
 
 def setHeadersForApp(yourName, appName, versionNumber):
 	headers = {"X-TBA-App-Id" : str(yourName) + str(appName) + str(versionNumber)}
