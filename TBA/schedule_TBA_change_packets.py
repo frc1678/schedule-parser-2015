@@ -6,7 +6,7 @@ import shutil as sh
 # Created by Colin Unger 
 # Year: 2015
 
-keys = ['uploadedData.maxFieldToteHeight', 'uploadedData.stackingAbility', 'match.officialRedScore', 'match.officialBlueScore']
+keys = ['uploadedData.maxFieldToteHeight', 'uploadedData.stackPlacing', 'match.officialRedScore', 'match.officialBlueScore']
 
 competition = input("Competition: ")
 year = int(input("Year: "))
