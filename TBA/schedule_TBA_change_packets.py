@@ -38,30 +38,31 @@ os.mkdir('Change Packets')
 print('Created directory "Change Packets"')
 
 for match in matchesJSON:
-	matchName = match['comp_level'][:1].upper() + str(match['match_number'])
-	for alliance in match['alliances']:
-		for team in match['alliances'][alliance]['teams']:
-			teamNum = int(team[3:])
+	if match['comp_level'] == 'qm':
+		matchName = match['comp_level'][:1].upper() + str(match['match_number'])
+		for alliance in match['alliances']:
+			for team in match['alliances'][alliance]['teams']:
+				teamNum = int(team[3:])
 
-			j = {}
-			j['class'] = 'Team'
-			j['uniqueValue'] = teamNum
-			j['allianceColor'] = alliance
+				j = {}
+				j['class'] = 'Team'
+				j['uniqueValue'] = teamNum
+				j['allianceColor'] = alliance
 
-			cs = []
-			for key in keys:
-				c = {}
-				c['keyToChange'] = 'matchData.' + matchName + '.' + key
-				c['valueToChangeTo'] = -1
-				cs.append(c)
+				cs = []
+				for key in keys:
+					c = {}
+					c['keyToChange'] = 'matchData.' + matchName + '.' + key
+					c['valueToChangeTo'] = -1
+					cs.append(c)
 
-			ct = {}
-			ct['keyToChange'] = 'name'
-			ct['valueToChangeTo'] = teamNames[teamNum]
-			cs.append(ct)
-			j['changes'] = cs
+				ct = {}
+				ct['keyToChange'] = 'name'
+				ct['valueToChangeTo'] = teamNames[teamNum]
+				cs.append(ct)
+				j['changes'] = cs
 
-			fileName = 'Change Packets/' + str(teamNum) + '_' + matchName + '_creation.json'
-			f = open(fileName, 'w')
-			print('Writing to file ' + fileName)
-			print(json.dumps(j, sort_keys=True, indent=4, separators=(',', ': ')), file=f)
+				fileName = 'Change Packets/' + str(teamNum) + '_' + matchName + '_creation|' + str(match['match_number']) + '.json'
+				f = open(fileName, 'w')
+				print('Writing to file ' + fileName)
+				print(json.dumps(j, sort_keys=True, indent=4, separators=(',', ': ')), file=f)
