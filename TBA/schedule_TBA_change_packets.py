@@ -58,7 +58,10 @@ for match in matchesJSON:
 
 				ct = {}
 				ct['keyToChange'] = 'name'
-				ct['valueToChangeTo'] = teamNames[teamNum]
+				if teamNum in teamNames:
+					ct['valueToChangeTo'] = teamNames[teamNum]
+				else:
+					ct['valueToChangeTo'] = json.loads(tba.makeTeamRequest(teamNum))['nickname']
 				cs.append(ct)
 				j['changes'] = cs
 
